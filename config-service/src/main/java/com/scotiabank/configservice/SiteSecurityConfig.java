@@ -1,4 +1,4 @@
-package com.scotiabank.api.dominio;
+package com.scotiabank.configservice;
 
 
 import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth2Sso;
