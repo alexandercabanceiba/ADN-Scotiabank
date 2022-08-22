@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @CrossOrigin("*")
-@RequestMapping("/ratings")
 @RestController
 @AllArgsConstructor
 public class ConsultaControladorRating {
