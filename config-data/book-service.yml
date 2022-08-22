@@ -7,4 +7,4 @@ server:
 eureka: 
   client:
     serviceUrl: 
-      defaultZone: http://root:s3cr3t@localhost:8099/eureka/
+      defaultZone: http://localhost:8099/eureka/
