@@ -6,7 +6,5 @@ server:
       timeout: 21600s
 eureka: 
   client:
-    fetchRegistry: 'false'
-    registerWithEureka: 'false'
     serviceUrl: 
       defaultZone: http://localhost:8099/eureka/
