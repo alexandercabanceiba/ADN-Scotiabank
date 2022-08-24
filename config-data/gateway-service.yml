@@ -12,7 +12,7 @@ zuul:
   routes:
     book-service:
       path: /books/**
-      url: lb://book-service
+      url: http://localhost:8091
     rating-service:
       path: /ratings/**
-      url: lb://rating-service
+      url: http://localhost:8092
