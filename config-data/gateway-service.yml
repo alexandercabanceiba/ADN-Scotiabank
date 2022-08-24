@@ -10,11 +10,9 @@ eureka:
       defaultZone: http://localhost:8099/eureka/
 zuul:
   routes:
-    books:
-      serviceId: book-service
+    book-service:
       path: /books/**
       url: lb://book-service
-    ratings:
-      serviceId: rating-service
+    rating-service:
       path: /ratings/**
       url: lb://rating-service
