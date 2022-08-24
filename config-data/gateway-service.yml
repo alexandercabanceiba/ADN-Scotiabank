@@ -3,7 +3,9 @@ server:
   servlet:
     session:
       timeout: 21600s
-
+spring:
+  application:
+    name: zuul-service
 eureka:
   client:
     serviceUrl:
@@ -11,8 +13,10 @@ eureka:
 zuul:
   routes:
     book-service:
+      serviceId: book-service
       path: /books/**
       url: http://localhost:8091
     rating-service:
+      serviceId: rating-service
       path: /ratings/**
       url: http://localhost:8092
