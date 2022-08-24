@@ -4,9 +4,6 @@ server:
     context-path: /books
     session:
       timeout: 21600s
-spring:
-  application:
-    name: book-service
 eureka: 
   client:
     serviceUrl: 

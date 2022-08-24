@@ -3,9 +3,6 @@ server:
   servlet:
     session:
       timeout: 21600s
-spring:
-  application:
-    name: zuul-service
 eureka:
   client:
     serviceUrl:

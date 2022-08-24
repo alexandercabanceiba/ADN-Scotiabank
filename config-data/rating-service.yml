@@ -4,9 +4,6 @@ server:
     context-path: /ratings
     session:
       timeout: 21600s
-spring:
-  application:
-    name: rating-service
 eureka: 
   client:
     serviceUrl: 
