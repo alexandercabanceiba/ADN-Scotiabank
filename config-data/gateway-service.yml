@@ -10,7 +10,7 @@ eureka:
 zuul:
   ribbon:
     eager-load:
-    enabled: true
+      enabled: true
   routes:
     book-service:
       serviceId: book-service
