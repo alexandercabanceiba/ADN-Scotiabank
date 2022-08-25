@@ -8,6 +8,9 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
 zuul:
+  ribbon:
+    eager-load:
+    enabled: true
   routes:
     book-service:
       serviceId: book-service
