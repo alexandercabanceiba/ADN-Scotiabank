@@ -7,14 +7,29 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
-zuul:
-  ribbon:
-    eager-load:
-      enabled: true
-  routes:
-    book-service:
-      serviceId: book-service
-      path: /books/**
-    rating-service:
-      serviceId: rating-service
-      path: /ratings/**
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: book-service
+          uri: lb://book-service
+          predicates:
+            - Path=/books/**
+        - id: rating-service
+          uri: lb://rating-service
+          predicates:
+            - Path=/ratings/**
+#zuul:
+#  ribbon:
+#    eager-load:
+#      enabled: true
+# routes:
+#    book-service:
+#      serviceId: book-service
+#      path: /books/**
+#    rating-service:
+#      serviceId: rating-service
+#      path: /ratings/**
