@@ -1,16 +1,17 @@
 package com.scotiabank.api.aplicacion.rating;
 
+import com.scotiabank.api.dominio.rating.RatingDto;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 @Component
 public class ManejadorConsultarRating {
-    public List<com.scotiabank.api.dominio.rating.RatingDto> ejecutar(){
+    public List<RatingDto> ejecutar(){
 
-        List<com.scotiabank.api.dominio.rating.RatingDto> ratings = new ArrayList();
+        List<RatingDto> ratings = new ArrayList();
 
-        ratings.add(new com.scotiabank.api.dominio.rating.RatingDto(2,2, 5));
+        ratings.add(new RatingDto(2,2, 5));
 
         return ratings;
     }
