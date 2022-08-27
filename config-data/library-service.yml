@@ -1,9 +1,6 @@
 server:
   port: 8093
-  servlet:
-    context-path: /library
-    session:
-      timeout: 21600s
+  
 eureka: 
   client:
     serviceUrl: 

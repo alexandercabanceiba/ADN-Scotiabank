@@ -1,9 +1,6 @@
 server:
   port: 8092
-  servlet:
-    context-path: /ratings
-    session:
-      timeout: 21600s
+  
 eureka: 
   client:
     serviceUrl: 

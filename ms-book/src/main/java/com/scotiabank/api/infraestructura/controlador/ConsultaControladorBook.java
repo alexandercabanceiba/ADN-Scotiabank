@@ -15,6 +15,7 @@ import java.util.List;
 @CrossOrigin("*")
 @RestController
 @AllArgsConstructor
+@RequestMapping("/books")
 public class ConsultaControladorBook {
 
     private final ManejadorConsultarBook manejadorConsultarBook;

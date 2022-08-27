@@ -1,8 +1,6 @@
 server:
   port: 8080
-  servlet:
-    session:
-      timeout: 21600s
+  
 eureka:
   client:
     serviceUrl:

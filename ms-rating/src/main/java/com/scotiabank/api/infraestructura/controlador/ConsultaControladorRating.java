@@ -14,6 +14,7 @@ import java.util.List;
 @CrossOrigin("*")
 @RestController
 @AllArgsConstructor
+@RequestMapping("/ratings")
 public class ConsultaControladorRating {
 
     private final ManejadorConsultarRating manejadorConsultarRating;
