@@ -2,6 +2,7 @@ package com.scotiabank.library.client;
 
 import com.scotiabank.library.dominio.rating.Rating;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
@@ -11,5 +12,5 @@ import java.util.List;
 public interface RatingCliente {
 
     @GetMapping("obtener-rating")
-    public List<Rating> obtenerTodosLosRating();
+    public ResponseEntity<List<Rating>> obtenerTodosLosRating();
 }

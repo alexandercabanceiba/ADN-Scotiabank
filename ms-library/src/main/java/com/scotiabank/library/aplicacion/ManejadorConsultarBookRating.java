@@ -21,11 +21,8 @@ public class ManejadorConsultarBookRating {
 
     public Library ejecutar(){
 
-        List<Book> books = new ArrayList();
-        books = bookCliente.obtenerTodosLosLibros();
-
-        List<Rating> ratings = new ArrayList();
-        ratings = ratingCliente.obtenerTodosLosRating();
+        List<Book> books = bookCliente.obtenerTodosLosLibros().getBody();
+        List<Rating> ratings = ratingCliente.obtenerTodosLosRating().getBody();
         //Book book = new Book(2,"Lo que el viento se llevo", "Margareth Michell");
         //Rating ratings = new Rating(2,2, 5);
 
