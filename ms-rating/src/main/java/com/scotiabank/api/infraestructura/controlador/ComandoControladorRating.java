@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin("*")
 @RestController
 @AllArgsConstructor
+@RequestMapping("/ratings")
 public class ComandoControladorRating {
 
     @ResponseStatus(HttpStatus.CREATED)
