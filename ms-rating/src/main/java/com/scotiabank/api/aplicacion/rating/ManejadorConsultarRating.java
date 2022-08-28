@@ -11,7 +11,9 @@ public class ManejadorConsultarRating {
 
         List<RatingDto> ratings = new ArrayList();
 
+        ratings.add(new RatingDto(1,1, 5));
         ratings.add(new RatingDto(2,2, 5));
+        ratings.add(new RatingDto(3,3, 5));
 
         return ratings;
     }

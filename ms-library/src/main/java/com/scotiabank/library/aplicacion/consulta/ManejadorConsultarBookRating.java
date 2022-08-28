@@ -1,4 +1,4 @@
-package com.scotiabank.library.aplicacion;
+package com.scotiabank.library.aplicacion.consulta;
 
 import com.scotiabank.library.client.BookCliente;
 import com.scotiabank.library.client.RatingCliente;

@@ -11,7 +11,9 @@ public class ManejadorConsultarBook {
 
         List<BookDto> books = new ArrayList();
 
-        books.add(new BookDto(2,"Lo que el viento se llevo", "Margareth Michell"));
+        books.add(new BookDto(1,"Lo que el viento se llevo", "Margareth Michell"));
+        books.add(new BookDto(2,"Dublineses", "James Joyce"));
+        books.add(new BookDto(3,"El Bazar de los idiotas", "Gustavo Alvarez Gardeazabal"));
 
         return books;
     }

@@ -1,11 +1,11 @@
 package com.scotiabank.library.infraestructura.controlador;
 
-import com.scotiabank.library.aplicacion.consulta.ManejadorConsultarBookRating;
+import com.scotiabank.library.aplicacion.comando.ManejadorRegistrarLibrosYRatings;
 import com.scotiabank.library.dominio.library.Library;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,13 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/library")
-public class ConsultaControladorBookRating {
-    private final ManejadorConsultarBookRating manejadorConsultarBookRating;
+public class ComandoControladorBookRating {
 
-    @GetMapping("obtener-books-ratings")
-    public ResponseEntity<Library> obtenerLibrosYRatings() {
-        return ResponseEntity.ok(manejadorConsultarBookRating.ejecutar());
+    private final ManejadorRegistrarLibrosYRatings manejadorRegistrarLibrosYRatings;
+
+    @PostMapping("crear-books-ratings")
+    public ResponseEntity<Long> obtenerLibrosYRatings() {
+        return ResponseEntity.ok(manejadorRegistrarLibrosYRatings.ejecutar());
     }
-
 }
-
