@@ -8,7 +8,7 @@ eureka:
   instance:
     prefer-ip-address: true
     hostname: localhost
-feign:
+Feign:
   hystrix:
     enabled: true
     dashboard:
@@ -16,6 +16,5 @@ feign:
 management:
   endpoints:
     web:
-      base-path: /
       exposure:
         include: '*'
