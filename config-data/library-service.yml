@@ -8,11 +8,11 @@ eureka:
   instance:
     prefer-ip-address: true
     hostname: localhost
-Feign:
-  hystrix:
-    enabled: true
-    dashboard:
-      proxyStreamAllowList: '*'
+
+hystrix:
+  enabled: true
+  dashboard:
+    proxyStreamAllowList: '*'
 management:
   endpoints:
     web:
