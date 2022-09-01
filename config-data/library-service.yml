@@ -10,7 +10,6 @@ eureka:
     hostname: localhost
 Feign:
   hystrix:
-    enabled: true
     dashboard:
       proxy-stream-allow-list: '*'
 management:
