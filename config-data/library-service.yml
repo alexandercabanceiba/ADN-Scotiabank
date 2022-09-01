@@ -8,13 +8,14 @@ eureka:
   instance:
     prefer-ip-address: true
     hostname: localhost
-Feign:
+feign:
   hystrix:
     enabled: true
     dashboard:
-      proxy-stream-allow-list: "*"
+      proxy-stream-allow-list: '*'
 management:
   endpoints:
     web:
+      base-path: /
       exposure:
-        include: "*"
+        include: '*'
