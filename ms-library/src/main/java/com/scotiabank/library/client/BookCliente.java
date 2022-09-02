@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(name = "book-service", fallbackFactory = BookHystrixFallbackFactory.class)
+@FeignClient(name = "book-service", fallback = BookHystrixFallbackFactory.class)
 public interface BookCliente {
     @GetMapping("/books/obtener-libros")
     public ResponseEntity<List<Book>> obtenerTodosLosLibros();

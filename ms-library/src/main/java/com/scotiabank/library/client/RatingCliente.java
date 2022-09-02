@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
-@FeignClient(name = "rating-service", fallbackFactory = RatingHystrixFallbackFactory.class)
+@FeignClient(name = "rating-service", fallback = RatingHystrixFallbackFactory.class)
 public interface RatingCliente {
     @GetMapping("/ratings/obtener-rating")
     public ResponseEntity<List<Rating>> obtenerTodosLosRating();
