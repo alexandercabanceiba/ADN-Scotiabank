@@ -16,14 +16,14 @@ public class ManejadorRegistrarLibrosYRatings {
 
     public Long ejecutar(){
 
-        Long books = bookCliente.crearLibro().getBody();
-        Long ratings = ratingCliente.crearRating().getBody();
+        //Long books = bookCliente.crearLibro().getBody();
+        //Long ratings = ratingCliente.crearRating().getBody();
 
 
         Long resp = null ;
-        if(books == 1l && ratings == 1l){
+       /* if(books == 1l && ratings == 1l){
             resp = 1l;
-        }
+        }*/
 
         return resp;
     }
