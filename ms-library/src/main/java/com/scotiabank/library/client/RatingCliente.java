@@ -1,6 +1,5 @@
 package com.scotiabank.library.client;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.scotiabank.library.dominio.rating.Rating;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;

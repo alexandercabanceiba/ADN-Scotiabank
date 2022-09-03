@@ -1,6 +1,10 @@
 server:
   port: 8093
-
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enable: true
 eureka: 
   client:
     serviceUrl: 
