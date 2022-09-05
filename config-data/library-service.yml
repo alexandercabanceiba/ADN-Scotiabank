@@ -26,3 +26,9 @@ management:
     web:
       exposure:
         include: hystrix.stream
+book-service:
+  ribbon:
+    listOfServers: localhost:9095
+rating-service:
+  ribbon:
+    listOfServers: localhost:9999
