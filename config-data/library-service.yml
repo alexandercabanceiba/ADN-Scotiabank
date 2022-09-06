@@ -28,7 +28,7 @@ management:
         include: hystrix.stream
 book-service:
   ribbon:
-    listOfServers: localhost:9095
+    listOfServers: localhost:8081
 rating-service:
   ribbon:
-    listOfServers: localhost:9999
+    listOfServers: localhost:8092
