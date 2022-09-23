@@ -8,3 +8,11 @@ eureka:
   instance:
     prefer-ip-address: true
     hostname: localhost
+
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enable: true
+  application:
+    zipkin: http://localhost:9411

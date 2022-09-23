@@ -32,6 +32,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.security:spring-security-test'
 	implementation 'org.springframework.cloud:spring-cloud-starter-oauth2:2.2.5.RELEASE'
+	implementation 'org.springframework.cloud:spring-cloud-sleuth-zipkin'
+	implementation 'org.springframework.cloud:spring-cloud-starter-sleuth'
 }
 
 dependencyManagement {
