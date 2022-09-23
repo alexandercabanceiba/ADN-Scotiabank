@@ -26,9 +26,10 @@ management:
     web:
       exposure:
         include: hystrix.stream
-book-service:
+
+ping-server:
   ribbon:
-    listOfServers: localhost:8081
-rating-service:
-  ribbon:
-    listOfServers: localhost:8092
+    eureka:
+      enabled: false
+    listOfServers: localhost:8091, localhost:8092
+    ServerListRefreshInterval: 15000
