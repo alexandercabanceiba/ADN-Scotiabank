@@ -1,0 +1,30 @@
+server:
+  port: 9090
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: gateway-service
+          uri: lb://gateway-service
+          predicates:
+            - Path=/books/**
+#zuul:
+#  ribbon:
+#    eager-load:
+#      enabled: true
+# routes:
+#    book-service:
+#      serviceId: book-service
+#      path: /books/**
+#    rating-service:
+#      serviceId: rating-service
+#      path: /ratings/**
